@@ -24,7 +24,7 @@ public class VariableDemo {
 	}
 	
 	public static void substraction() {
-		System.out.println(z); // you can not use non static variable inside the static function
+//		System.out.println(z); // you can not use non static variable inside the static function
 		System.out.println(f);
 	}
 
