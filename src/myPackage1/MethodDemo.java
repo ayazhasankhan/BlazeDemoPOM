@@ -7,6 +7,8 @@ public class MethodDemo {
 		
 		int x=7;  // x is local variable
 		int y=8; // y is local variable
+		
+		int sum =x+y;
 	}
 	
 	public void multiplication() {
