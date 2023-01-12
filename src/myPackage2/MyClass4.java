@@ -1,6 +1,6 @@
 package myPackage2;
 
-import myPackage1.AceessModifierExample;
+import basicConcepts.AceessModifierExample;
 
 public class MyClass4 extends AceessModifierExample{
 	

@@ -1,4 +1,4 @@
-package myPackage1;  //Package detail
+package basicConcepts;  //Package detail
 
 public class MyClass1 {  // Class name declaration 
 

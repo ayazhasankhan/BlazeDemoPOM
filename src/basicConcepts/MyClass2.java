@@ -1,4 +1,4 @@
-package myPackage1;
+package basicConcepts;
 
 public class MyClass2 {
 
