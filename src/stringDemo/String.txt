@@ -1,0 +1,15 @@
+
+
+String: It is an object that represents sequence of char values.
+
+'a''y''a''z'
+
+Ways to create String Object:
+
+1. By string literal
+
+String s ="Hello, How are you";
+
+2. By new keyword
+
+String s = new String("Hello, How are you");

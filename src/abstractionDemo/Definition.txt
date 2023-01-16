@@ -1,0 +1,33 @@
+
+
+
+Abstraction: Process of hiding the implimentation details and showing only usefull information to the user.
+
+Example: ATM Machine
+
+Ways to achieve the abstraction in java:
+
+1. Abstract Class (0 %-100 %)
+2. Interface 100%
+
+
+1. Abstract Class (0 %-100 %) : 
+
+* A Abstract Class must be declared with an abstract keyword.
+* It can have abs and non abs method
+* It can not be instantiated
+* It can have constructor and static method also
+* it can have final methods
+
+2. Interface: 1. can achieve abstraction, 2. can achieve the functionality of multiple inheritance 
+
+ * interface is always implemented by a class
+ 
+ extends: class-class, class-abstract class, abs class-abs class, interface-interface
+ implements: Class-interface
+ 
+ 
+* A Interface must be declared with an interface keyword.
+* It can have abs method
+* It can have static method
+* it can have default method
