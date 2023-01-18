@@ -6,28 +6,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class FirstTestNGExample {
+public class TestNGExample {
 	
 	public static WebDriver driver;
 	
-	@AfterTest
-	public void tearDown() {
-		
-		driver.close();
-	}  
-	
-	@Test
-	public void actualTest() {
-		
-		driver.get("https://blazedemo.com/");
-		new Select(driver.findElement(By.name("fromPort"))).selectByVisibleText("San Diego");
-	}
-	
-	@BeforeTest // anotations
+	@BeforeMethod // anotations
 	public void setUp() {
 		
 		File file = new File("/Users/mr.a2z/Ayazworkspace/SDETBatch007/jar/geckodriver");
@@ -35,8 +24,26 @@ public class FirstTestNGExample {
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 	}
-		
 	
-
+	@Test(priority =2)
+	public void atTest1() {	
+		driver.get("https://blazedemo.com/");
+	}
+	
+	@Test(enabled =true)
+	public void atTest2() {	
+		driver.get("https://the-internet.herokuapp.com/");
+	}
+	
+	@Test(priority =1)
+	public void atTest3() {	
+		driver.get("https://www.saucedemo.com/");
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		
+		//driver.close();
+	} 	
 
 }
