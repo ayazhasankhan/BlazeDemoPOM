@@ -30,7 +30,7 @@ public class TestNGExample {
 		driver.get("https://blazedemo.com/");
 	}
 	
-	@Test(enabled =true)
+	@Test(priority =3)
 	public void atTest2() {	
 		driver.get("https://the-internet.herokuapp.com/");
 	}

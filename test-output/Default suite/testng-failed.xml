@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.FirstTestNGExample">
+      <class name="testNG.IFrameHandlingExample">
         <methods>
           <include name="actualTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testNG.FirstTestNGExample -->
+      </class> <!-- testNG.IFrameHandlingExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
