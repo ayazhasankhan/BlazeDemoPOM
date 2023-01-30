@@ -27,12 +27,13 @@ public static WebDriver driver;
 	@Test
 	public void actualTest() throws Exception {
 		
-		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.get("https://demoqa.com/frames");
 		
-		Thread.sleep(20000);
+		driver.switchTo().frame("frame1");
+		String s =driver.findElement(By.id("sampleHeading")).getText();
+		System.out.println(s);
 		
-		driver.switchTo().frame("courses-iframe");
-		driver.findElement(By.xpath("//a[@href=\"https://courses.rahulshettyacademy.com/sign_in\"]")).click();
+		driver.switchTo().defaultContent(); // go out of the iframe
 	}
 	@AfterTest
 	public void tearDown() {
