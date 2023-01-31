@@ -32,8 +32,10 @@ public static WebDriver driver;
 		
 		String s =driver.findElement(By.xpath("//a[@href=\"/notification_message\"]")).getText();
 		
-		Assert.assertEquals(s, "Click here1");
-		//System.out.println(s.equals("Click here1"));
+		System.out.println(s);
+		
+		Assert.assertEquals(s, "Click here");
+		
 		
 	}
 	
