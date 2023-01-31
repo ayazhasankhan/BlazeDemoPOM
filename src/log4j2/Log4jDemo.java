@@ -11,6 +11,6 @@ public class Log4jDemo {
 	 
 	    public static void main(String[] args) {
 	    	
-	        log.info("Hello, Ayaz");
+	        log.info("Hello, Ayaz, How are you");
 	    }
 	}
